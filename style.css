@@ -140,12 +140,26 @@ section{
     left:2%;
     }
 }
-
+/*Media query para ajustar tamaño de logos*/
+@media only screen and (max-width: 1321px){
+.cree{
+    display:inline-block;
+    width: 200px;
+    margin-left: 75px;
+}
+    
 @media only screen and (max-width: 1321px){
     .titulocurso{
         font-size: 50px;
         transition: width 2s;
     }
+    
+    /*Media query para ajustar tamaño de logos*/
+    .cree{
+    display:inline-block;
+    width: 150px;
+    margin-left: 75px !important;
+}
 }
 
 @media only screen and (max-width: 1321px){
@@ -153,4 +167,19 @@ section{
         width: 150px;
         margin-left: 0px;
     }
+}
+    
+ /*Media query para ajustar tamaño de logos*/    
+ @media only screen and (min-width: 1321px){
+    #contactform{
+    position:inline;
+    display:none;
+    top:30%;
+    left:2%;
+    }
+    .cree{
+    display:inline-block;
+    width: 150px;
+    margin-left: 105px !important;
+}
 }
