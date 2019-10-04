@@ -11,198 +11,161 @@
     <script src="main.js"></script>
   </head>
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--Barra de navegación superior-->
-          <a class="navbar-brand" onclick="Restablecer()" href="#"><img class="logo" src="img/logo.png" alt="" srcset=""></a>   
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <img class="burger" src="img/burger.png" alt="" srcset="">
-                </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--Barra de navegación superior-->
+      <a class="navbar-brand" onclick="Restablecer()" href="#"><img class="logo" src="img/logo.png" alt="" srcset=""></a>   
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img class="burger" src="img/burger.png" alt="" srcset="">
+      </button>
               
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                    <li class="nav-item">
-                    </li>
-                      <a onclick="Restablecer()" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="http://www.camaramadrid.es">Camara Madrid</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Mi Curso
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Info Módulos</a>
-                        <a onclick="AbrirDescargas()" class="dropdown-item" href="#">Descargas</a>
-                        <div class="dropdown-divider"></div>
-                        <a onclick="AbrirFormadores()" class="dropdown-item" href="#">Contacto Formador y Orientador</a>
-                      </div>
-                    </li>
-                  </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+          </li>
+          <li class="nav-item">          
+            <a onclick="Restablecer()" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.camaramadrid.es">Camara Madrid</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Mi Curso
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Info Módulos</a>
+              <a onclick="AbrirDescargas()" class="dropdown-item" href="#">Descargas</a>
+              <div class="dropdown-divider"></div>
+              <a onclick="AbrirFormadores()" class="dropdown-item" href="#">Contacto Formador y Orientador</a>
+            </div>
+          </li>
+        </ul>
                   <form class="form-inline my-2 my-lg-0">
                   </form>
-                </div>
-              </nav>
-              <section>
-                <div id="principal"><!--Contenidos Página principal-->
-                  <div class="col-12" id="cajafront">
-                    <h2 class="titulocurso">Desarrollo web en Frontend</h2>
-                    <div id="listaimg">
-                      <img class="cree" src="img/creeenti.png" alt="" srcset="">
-                      <img class="cree"  src="img/garantia.png" alt="" srcset="">
-                      <img class="cree"  src="img/ministerio.png" alt="" srcset="">
-                      <img class="cree"  src="img/fondoeuropeo.png" alt="" srcset="">
-                      <img class="cree"  src="img/logo_blanco.png" alt="" srcset="">
-                    </div>
-                  </div>
-                  
-                </div>
-                  
-                <div id="descargar"><!--Contenidos Pagina Descargas del modulo del curso.-->
-                    <div id="formlog">                       
-                            <!--Card content-->
-                            <div class="card-body px-lg-5">
-                                <div class="clearfix"></div>
-                                <!-- Form -->
-                                <form class="text-center" style="color: #757575;" action="#!">
-                        
-                                    <p>Necesitas la contraseña del curso para acceder a las descargas.</p>
-                                    <!-- E-mai -->
-                                    <div class="md-form">
-                                        <input id="inputpass" type="password" id="materialSubscriptionFormEmail" class="form-control">
-                                        <label for="materialSubscriptionFormEmail">Contraseña</label>
-                                    </div>
-                        
-                                    <!-- Sign in button -->
-                                    <button onclick="ValidarYAcceder()" class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect">Acceso</button>
-                        
-                                </form>
-                                <!-- Form -->
-                        
-                            </div>
-                        
-                        </div>
-                    <!--<div id="formlog">
-                        
-                        <p>Necesitas la contraseña del módulo para acceder a la zona de descargas</p>
-                        <input id="inputpass" type="password">
-                        <button onclick="ValidarYAcceder()" class="botAcceder">Acceder</button>
-                    </div>-->
-                    <div id="contdesc"> <!--Enlaces de descarga-->
-                        <p> </p>
-                        <ul class="list-group row d-flex justify-content-center">
-                                <li class="list-group-item">Módulo 0: </li>
-                                <li class="list-group-item">Módulo 1: </li>
-                                <li class="list-group-item">Módulo 2: </li>
-                                <li class="list-group-item">Módulo 3: </li>
-                                <li class="list-group-item">Módulo 4: </li>
-                              </ul>
-                    </div>
-                </div>
-                <div id="contactform"> <!---Contenidos Pagina de Contacto Formadores-->
-                  <div id="orientador">
-                      <h3>Orientador</h3>
-                      <img src="img/user.jpg" alt="">
-                      <h4>Nombre - Teléfono - Email</h4>
-                  </div>
-                  <div id="forma">
-                      <h3>Formadores</h3>
-                      <img src="img/user.jpg" alt="">
-                      <h4>Nombre - Teléfono - Email - Troncal</h4>
-                      <img src="img/user.jpg" alt="">
-                      <h4>Nombre - Teléfono - Email - Específica</h4>
-                    </div>
-                </div>
-                </div>    </div>            
-                  </div>
-            </section>
-                <footer class="page-footer font-small blue pt-4"><!-- Footer -->
+      </div>
+    </nav>
+    <section>
+      <div id="principal"><!--Contenidos Página principal-->
+        <div class="col-12" id="cajafront">
+          <h2 class="titulocurso">Desarrollo web en Frontend</h2>
+          <div id="listaimg">
+            <img class="cree" src="img/creeenti.png" alt="" srcset="">
+            <img class="cree"  src="img/garantia.png" alt="" srcset="">
+            <img class="cree"  src="img/ministerio.png" alt="" srcset="">
+            <img class="cree"  src="img/fondoeuropeo.png" alt="" srcset="">
+            <img class="cree"  src="img/logo_blanco.png" alt="" srcset="">
+          </div>
+        </div>           
+      </div>
 
-                        <!-- Footer Links -->
-                        <div class="container-fluid text-center text-md-left">
+      <div id="descargar"><!--Contenidos Pagina Descargas del modulo del curso.-->
+        <div id="formlog">                       
+          <!--Card content-->
+          <div class="card-body px-lg-5">
+            <div class="clearfix"></div>
+              <!-- Form -->
+              <form class="text-center" style="color: #757575;" action="#!">
+                <p>Necesitas la contraseña del curso para acceder a las descargas.</p>
+                <!-- E-mail -->
+                <div class="md-form">
+                  <input id="inputpass" type="password" id="materialSubscriptionFormEmail" class="form-control">
+                  <label for="materialSubscriptionFormEmail">Contraseña</label>
+                </div>
+                <!-- Sign in button -->
+                <button onclick="ValidarYAcceder()" class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect">Acceso</button>
+                        
+              </form>
+              <!-- Form -->
+            </div>             
+          </div>
+          <!--<div id="formlog">
+          <p>Necesitas la contraseña del módulo para acceder a la zona de descargas</p>
+          <input id="inputpass" type="password">
+          <button onclick="ValidarYAcceder()" class="botAcceder">Acceder</button>
+          </div>-->
+          <div id="contdesc"> <!--Enlaces de descarga-->
+            <p> </p>
+            <ul class="list-group row d-flex justify-content-center">
+              <li class="list-group-item">Módulo 0: </li>
+              <li class="list-group-item">Módulo 1: </li>
+              <li class="list-group-item">Módulo 2: </li>
+              <li class="list-group-item">Módulo 3: </li>
+              <li class="list-group-item">Módulo 4: </li>
+            </ul>
+          </div>
+      </div>
+      <div id="contactform"> <!---Contenidos Pagina de Contacto Formadores-->
+        <div id="orientador">
+          <h3>Orientador</h3>
+          <img src="img/user.jpg" alt="">
+          <h4>Nombre - Teléfono - Email</h4>
+        </div>
+        <div id="forma">
+          <h3>Formadores</h3>
+          <img src="img/user.jpg" alt="">
+          <h4>Nombre - Teléfono - Email - Troncal</h4>
+          <img src="img/user.jpg" alt="">
+          <h4>Nombre - Teléfono - Email - Específica</h4>
+        </div>
+      </div>
+    </section>
+<footer class="page-footer font-small blue pt-4"><!-- Footer -->
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+        <!-- Content -->
+        <h5 class="text-uppercase">Cámara de Madrid</h5>
+        <p>Representa, promueve y defiende los intereses generales de los agentes económicos de la región, y presta servicios a las empresas que ejercen su actividad en la Comunidad de Madrid.</p>
+        <ul class="listado">
+           <li> <a href="http://www.camaramadrid.es/linkto/presentacion">Sobre Cámara de Madrid</a></li>
+           <li> <a href="http://www.camaramadrid.es/linkto/portal-de-transparencia">Portal de Transparencia</a></li>
+           <li> <a href="http://www.camaramadrid.es/linkto/codigo-de-buenas-practicas">Código de Buenas Prácticas</a></li>
+           <li> <a href="http://www.camaramadrid.es/linkto/entidades-participadas">Representación Institucional y Entidades Participadas</a></li>
+        </ul>
+      </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+          <!-- Links -->
+          <h5 class="text-uppercase">Servicios más demandados</h5>
+          <ul class="list-unstyled">
+            <li> <a href="http://www.camaramadrid.es/formacion2">Formación in company</a></li>
+            <li> <a href="http://www.camaramadrid.es/certificados-digitales1">Certificados digitales</a> </li>
+            <li> <a href="http://www.camaramadrid.es/punto-de-atencion-al-emprendedor-pae-">Atención al Emprendedor</a> </li>
+            <li> <a href="http://www.camaramadrid.es/cliente-misterioso2">Cliente misterioso</a> </li>
+            <li> <a href="http://www.camaramadrid.es/docupais1">Docupais</a> </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+          <!-- Links -->
+          <h5 class="text-uppercase">Colaboradores</h5>
+          <ul class="list-unstyled">
+            <li> <a href="http://www.ceim.es" target="blank">CEIM</a> </li>
+            <li> <a href="http://www.ifema.es" target="blank">IFEMA</a> </li>
+            <li> <a href="http://www.avalmadrid.es/inicio" target="blank">AVALMADRID</a> </li>
+            <li> <a href="http://www.aico.org" target="blank">AICO</a> </li>
+            <li> <a href="http://n-economia.com/" target="blank">N-ECONOMÍA</a> </li>
+            <li> <a href="http://www.clysim.es/" target="blank">CLM</a> </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3"> © Cámara de Madrid. Todos los derechos reservados. 2019
+    <a href="http://www.camaramadrid.es/"> Cámara de comercio</a>
+    <br>  Diseño de plataforma  
+    <a href="http://github.com/AlvProdz"> Álvaro Perera</a>
+  </div>
+  <!-- Copyright -->
                       
-                          <!-- Grid row -->
-                          <div class="row">
-                      
-                            <!-- Grid column -->
-                            <div class="col-md-6 mt-md-0 mt-3">
-                      
-                              <!-- Content -->
-                              <h5 class="text-uppercase">Cámara de Madrid</h5>
-                              <p>Representa, promueve y defiende los intereses generales de los agentes económicos de la región, y presta servicios a las empresas que ejercen su actividad en la Comunidad de Madrid.</p>
-                              <ul class="listado"> <li> <a href="http://www.camaramadrid.es/linkto/presentacion">Sobre Cámara de Madrid</a> </li> <li> <a href="http://www.camaramadrid.es/linkto/portal-de-transparencia">Portal de Transparencia</a> </li> <li> <a href="http://www.camaramadrid.es/linkto/codigo-de-buenas-practicas">Código de Buenas Prácticas</a> </li> <li> <a href="http://www.camaramadrid.es/linkto/entidades-participadas">Representación Institucional y Entidades Participadas</a> </li> </ul>
-                            </div>
-                            <!-- Grid column -->
-                      
-                            <hr class="clearfix w-100 d-md-none pb-3">
-                      
-                            <!-- Grid column -->
-                            <div class="col-md-3 mb-md-0 mb-3">
-                      
-                              <!-- Links -->
-                              <h5 class="text-uppercase">Servicios más demandados</h5>
-                      
-                              <ul class="list-unstyled">
-                                <li>
-                                    <a href="http://www.camaramadrid.es/formacion2">Formación in company</a>
-                                </li>
-                                <li>
-                                    <a href="http://www.camaramadrid.es/certificados-digitales1">Certificados digitales</a>
-                                </li>
-                                <li>
-                                    <a href="http://www.camaramadrid.es/punto-de-atencion-al-emprendedor-pae-">Atención al Emprendedor</a>
-                                </li>
-                                <li>
-                                    <a href="http://www.camaramadrid.es/cliente-misterioso2">Cliente misterioso</a>
-                                </li>
-                                <li> 
-                                    <a href="http://www.camaramadrid.es/docupais1">Docupais</a> 
-                                </li>
-                              </ul>
-                      
-                            </div>
-                            <!-- Grid column -->
-                      
-                            <!-- Grid column -->
-                            <div class="col-md-3 mb-md-0 mb-3">
-                      
-                              <!-- Links -->
-                              <h5 class="text-uppercase">Colaboradores</h5>
-                      
-                              <ul class="list-unstyled">
-                                <li>
-                                    <a href="http://www.ceim.es" target="blank">CEIM</a>
-                                </li>
-                                <li>
-                                    <a href="http://www.ifema.es" target="blank">IFEMA</a>
-                                </li>
-                                <li>
-                                    <a href="http://www.avalmadrid.es/inicio" target="blank">AVALMADRID</a>
-                                </li>
-                                <li>
-                                    <a href="http://www.aico.org" target="blank">AICO</a>
-                                </li>
-                                <li> <a href="http://n-economia.com/" target="blank">N-ECONOMÍA</a> </li>
-                                <li> <a href="http://www.clysim.es/" target="blank">CLM</a> </li>
-                              </ul>
-                      
-                            </div>
-                            <!-- Grid column -->
-                      
-                          </div>
-                          <!-- Grid row -->
-                      
-                        </div>
-                        <!-- Footer Links -->
-                      
-                        <!-- Copyright -->
-                        <div class="footer-copyright text-center py-3"> © Cámara de Madrid. Todos los derechos reservados. 2019
-
-                         <a href="http://www.camaramadrid.es/"> Cámara de comercio</a><br>  Diseño de plataforma  <a href="http://github.com/AlvProdz"> Álvaro Perera</a>
-                        </div>
-                        <!-- Copyright -->
-                      
-                      </footer>
+</footer>
                       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
