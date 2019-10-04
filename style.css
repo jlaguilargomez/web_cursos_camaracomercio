@@ -27,6 +27,10 @@ a{
     background-position: center center;
     background-repeat: no-repeat;
 }
+/*Texto navbar en color blanco*/
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+}
 
 .cree{
     display:inline-block;
