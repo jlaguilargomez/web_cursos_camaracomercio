@@ -123,7 +123,7 @@ p{
     height: 85vh; 
     width:100vw;
     background-color:rgb(212, 190, 161);
-    background-image: url("/Users/jlaguilar/Desktop/curso_comercio/img/estudiantes.jpg");
+    background-image: url('../img/estudiantes.jpg');
     background-size: cover;
     background-attachment:fixed;
 }
@@ -171,7 +171,7 @@ p{
     align-items: center;
     height:auto;
     min-height:100vh;
-    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgba(255, 255, 255, 0.671)), url("/Users/jlaguilar/Desktop/curso_comercio/img/cab3.jpg");
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgba(255, 255, 255, 0.671)), url('../img/cab3.jpg');
     background-size:auto 100%;
     background-position: left;
     background-repeat: no-repeat;
