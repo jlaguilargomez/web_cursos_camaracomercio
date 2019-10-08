@@ -12,7 +12,6 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 
-
 </head>
 
 <body>
@@ -22,9 +21,9 @@
         <div class="flex-menu">
             <img class="logo-comercio" src="./img/logo.png" alt="logo camara comercio">
             
-            <img  class="hamburguer" src="img/burger.png" alt="hamburguer icon">
+            <img  id="hamburguer-btn" class="hamburguer" src="img/burger.png" alt="hamburguer icon">
 
-            <ul class="menu-items">
+            <ul id="menu-items" class="menu-items">
                 <li><a href="#intro">Home</a></li>
                 <li><a href="#info">Info</a></li>
                 <li><a href="#syllabus">Contenido</a></li>
@@ -40,7 +39,7 @@
     <section id="intro" class="intro">
         <div class="intro-content">
                 <h1 class="title">Curso Desarrollo Web Front-end</h1>
-                <h3>215 h</h3>
+                <h2>215 h</h2>
         </div>
     </section>
 
@@ -132,13 +131,13 @@
         </div>
 
         <div class="syllabus-logos">
-            <img class="logo" src="img/logos lenguajes/competencias-digitales-e1522745931788.png" alt="logo competencias digitales">
-            <img class="logo" src="img/logos lenguajes/html.png" alt="logo html">
+            <img class="logo" src="img/logos lenguajes/treslogos.png" alt="logo competencias digitales">
+            <!-- <img class="logo" src="img/logos lenguajes/html.png" alt="logo html">
             <img class="logo" src="img/logos lenguajes/icon css 3.png" alt="logo css">
             <img class="logo" src="img/logos lenguajes/JavaScript-logo.png" alt="logo javascript">
             <img class="logo" src="img/logos lenguajes/jquery.png" alt="logo jquery">
             <img class="logo" src="img/logos lenguajes/angular.png" alt="logo angular">
-            <img class="logo" src="img/logos lenguajes/590px-Node.js_logo.svg.png" alt="logo node js">
+            <img class="logo" src="img/logos lenguajes/590px-Node.js_logo.svg.png" alt="logo node js"> -->
 
         </div>
     
@@ -150,53 +149,46 @@
         <h2>Recursos</h2>
         <div class="input-box">
             <p>Introduce la contraseña para poder descargar el contenido del curso:</p>
-            <input type="password" name="pass" id="pass">
-            <input type="button" value="Enviar">
+            <input id="pass" type="password" name="pass" placeholder="insert password">
+            <input id ="pass-submit" type="button" value="Enviar">
+            <p id="insert-text" class="insert-text"></p>
         </div>
 
         <div id="material" class="material">
-            <div class="marterial-box">
-                <img src="img/logos lenguajes/html.png" alt="logo html">
-                <h4>HTML</h4>
-                <p>Lenguaje de etiquetas....</p>
+            <div class="material-box">
+                <img class="logo" src="img/logos lenguajes/html.png" alt="logo html">
+                <a href="http://download2268.mediafire.com/c0wshwj086rg/i0j2kvlxnugvc6x/html.zip" target="_blank" rel="noopener noreferrer"><p>Descargar material</p></a>
             </div>
-            <div class="marterial-box">
+            <div class="material-box">
                 <img src="img/logos lenguajes/icon css 3.png" alt="logo css">
-                <h4>CSS</h4>
-                <p>Lenguaje de etiquetas....</p>
+                <a href="http://download2268.mediafire.com/6u9gyijbbmzg/o266d8la49oq2m9/css.zip" target="_blank" rel="noopener noreferrer"><p>Descargar material</p></a>
             </div>
-            <div class="marterial-box">
+            <div class="material-box">
                 <img src="img/logos lenguajes/JavaScript-logo.png" alt="logo javascript">
-                <h4>JavaScript</h4>
-                <p>Lenguaje de etiquetas....</p>
+                <a href="http://download2266.mediafire.com/p4b4jxxikvmg/8hus5k3b62q376l/jsnativo.zip" target="_blank" rel="noopener noreferrer"><p>Descargar material</p></a>
             </div>
-            <div class="marterial-box">
+            <div class="material-box">
                 <img src="img/logos lenguajes/jquery.png" alt="logo jquery">
-                <h4>JQuery</h4>
-                <p>Lenguaje de etiquetas....</p>
+                <a href="http://download2265.mediafire.com/cycqa5ck6svg/u377buixoobxvp9/jquery.zip" target="_blank" rel="noopener noreferrer"><p>Descargar material</p></a>
             </div>
-            <div class="marterial-box">
+            <div class="material-box">
                 <img src="img/logos lenguajes/angular.png" alt="logo angular">
-                <h4>Angular</h4>
-                <p>Lenguaje de etiquetas....</p>
+                <a href="http://download2269.mediafire.com/tyn1sl3lfsbg/694z3d7uvigobdt/angularjs.zip" target="_blank" rel="noopener noreferrer"><p>Descargar material</p></a>
             </div>
-            <div class="marterial-box">
+            <div class="material-box">
                 <img src="img/logos lenguajes/590px-Node.js_logo.svg.png" alt="logo nodejs">
-                <h4>Node JS</h4>
-                <p>Lenguaje de etiquetas....</p>
+                <a href="http://download2266.mediafire.com/4tu8pq6n2syg/ziztwpi9juqdewr/nodejs.zip" target="_blank" rel="noopener noreferrer"><p>Descargar material</p></a>
             </div>
-            <div class="marterial-box">
+            <div class="material-box">
                 <img src="img/logos lenguajes/html.png" alt="logo html">
-                <h4>Varios</h4>
-                <p>Lenguaje de etiquetas....</p>
+                <a href="http://download2266.mediafire.com/61t0696eeeyg/5wzb6xsbhtrpdow/otros.zip" target="_blank" rel="noopener noreferrer"><p>Descargar material</p></a>
             </div>
 
             <div>
 
             </div>
 
-        </div>
-        
+        </div> 
 
     </section>
 
@@ -214,6 +206,6 @@
     </footer>
 
 
-    
+    <script src="./src/script.js"></script>  
 </body>
 </html>
