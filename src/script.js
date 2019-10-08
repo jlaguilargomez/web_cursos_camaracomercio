@@ -30,10 +30,6 @@ let DOMinteraction = {
         return showMenu; 
     },
 
-    hideMenu(){
-        menu.style.display = "none"
-    },
-
     showResources(){
         const password = '1234';
         let passInput = document.getElementById('pass').value;
@@ -67,7 +63,6 @@ let DOMinteraction = {
 
 hamburguerBtn.addEventListener('click',DOMinteraction.displayMenu);
 submit.addEventListener('click', DOMinteraction.showResources);
-navbar.addEventListener('mouseleave',DOMinteraction.hideMenu);
 
 
 setTimeout(DOMinteraction.displaySlackBox, 3000);
