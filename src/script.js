@@ -67,7 +67,7 @@ let DOMinteraction = {
 
 hamburguerBtn.addEventListener('click',DOMinteraction.displayMenu);
 submit.addEventListener('click', DOMinteraction.showResources);
-// navbar.addEventListener('mouseleave',DOMinteraction.hideMenu);
+navbar.addEventListener('mouseleave',DOMinteraction.hideMenu);
 
 
 setTimeout(DOMinteraction.displaySlackBox, 3000);
