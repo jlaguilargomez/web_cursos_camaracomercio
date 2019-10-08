@@ -1,13 +1,20 @@
 // Get "menu" elements
 let hamburguerBtn = document.getElementById('hamburguer-btn');
 let menu = document.getElementById('menu-items');
+let navbar = document.getElementById('navbar');
 let showMenu = false;
+
+
 
 // Get "resources" elements
 let resources = document.getElementById('material');
 let passBox = document.getElementById('pass');
 let submit = document.getElementById('pass-submit');
 let insertText = document.getElementById('insert-text');
+
+// Slack box
+let slackBox = document.getElementById('slack');
+let currentSlackBox = false;
 
 // DOM Interaction
 
@@ -21,6 +28,10 @@ let DOMinteraction = {
             menu.style.display = "none";
         }
         return showMenu; 
+    },
+
+    hideMenu(){
+        menu.style.display = "none"
     },
 
     showResources(){
@@ -39,17 +50,28 @@ let DOMinteraction = {
         }
 
         passBox.value='';
+    },
 
+    displaySlackBox(){
+        currentSlackBox = !currentSlackBox;
+        if(currentSlackBox){
+            slackBox.style.display = "flex";
+        }else{
+            slackBox.style.display = "none";
+        }
+        return showMenu; 
     }
+
 
 }
 
-hamburguerBtn.addEventListener('click',DOMinteraction.displayMenu)
-submit.addEventListener('click', DOMinteraction.showResources)
+hamburguerBtn.addEventListener('click',DOMinteraction.displayMenu);
+submit.addEventListener('click', DOMinteraction.showResources);
+// navbar.addEventListener('mouseleave',DOMinteraction.hideMenu);
 
 
-
-
+setTimeout(DOMinteraction.displaySlackBox, 3000);
+setTimeout(DOMinteraction.displaySlackBox, 9000);
 
 
 
